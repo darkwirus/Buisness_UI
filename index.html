@@ -7,10 +7,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Buisness UI</title>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/responsive.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/vendors.js"></script>
-	<script src="js/scroll.js"></script>
-	<script src="js/forms.js"></script>
 	<script src="js/map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
@@ -18,19 +16,19 @@
 <body>
 	<div class="wrapper">
 		<div class="container">
-			<div class="header">
+			<header class="header">
 				<div class="header__nav">
 					<div class="header__logo"> <a href="#"><img src="img/logo.png" alt="" /></a> </div>
 					<div class="header__menu">
-						<ul class="header__list">
-							<li><a href="#" class="header__link">Investors</a></li>
-							<li><a href="#" class="header__link">About Us</a></li>
-							<li><a href="#" class="header__link">Our Services</a></li>
-							<li><a href="#" class="header__link">News & Media</a></li>
-							<li><a href="#" class="header__link">Career</a></li>
-							<li><a href="#" class="header__link">Our Locations</a></li>
-						</ul>
-						<div class="header__icon"><a href=""><img src="img/icon.png" alt="" /></a></div>
+						<div class="header__list">
+							<a href="#" class="header__link">Investors</a>
+							<a href="#" class="header__link">About Us</a>
+							<a href="#" class="header__link">Our Services</a>
+							<a href="#" class="header__link">News & Media</a>
+							<a href="#" class="header__link">Career</a>
+							<a href="#" class="header__link">Our Locations
+								<img class="header__icon" src="img/icon.png" alt="" /></a>
+						</div>
 					</div>
 				</div>
 				<div class="header-content">
@@ -44,7 +42,19 @@
 				<div class="header__button">
 					<a href="" class="header__button--btn btn">Annual General Meeting 2017</a>
 				</div>
-			</div>
+				<div class="icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu__body"></div>
+			</header>
 			<section class="invest">
 				<div class="invest__title">Investor Relations</div>
 				<div class="invest__text">We’re Investor Relations team is striving to serve all shareholders and potential
