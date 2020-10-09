@@ -32,7 +32,7 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), options);
 
 	var icon = {
-		url: '../img/map-icon.png',
+		url: './img/map-icon.png',
 		scaledSize: new google.maps.Size(24, 29),
 		anchor: new google.maps.Point(9, 10)
 	}
