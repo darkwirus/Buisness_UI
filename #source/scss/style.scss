@@ -1,0 +1,371 @@
+@import "_reset";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=PT+Serif:wght@400;700&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	@media (max-width: 1200px) {
+		padding: 0 15px;
+	}
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	padding: 0px 0px 100px 0px;
+}
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px;
+	align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+	display: flex;
+	align-items: center;
+}
+.header__list {
+	display: flex;
+	li {
+		padding: 0px 0px 0px 27px;
+	}
+}
+.header__link {
+	color: #646667;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	&:hover {
+		color: #007397;
+	}
+}
+.header__icon {
+	padding: 0px 0px 0px 10px;
+}
+.header-content {
+	width: 100%;
+	min-height: 411px;
+	background-image: url("../img/overlay1.png"), url("../img/image1.png");
+	background-repeat: no-repeat;
+	@media (max-width: 1024px) {
+		background-size: 350px 350px, cover;
+	}
+	@media (max-width: 450px) {
+		background-size: 200px 200px, cover;
+	}
+	margin: 0px 0px 48px 0px;
+}
+.header-content__text {
+	text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: "PT Serif", serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding: 232px 0px 90px 400px;
+	@media (max-width: 1024px) {
+		padding: 232px 0px 90px 300px;
+		font-size: 28px;
+		line-height: 40px;
+	}
+	@media (max-width: 450px) {
+		padding: 190px 0px 90px 300px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+.header__text {
+	margin: 0 auto;
+	max-width: 970px;
+	color: #646667;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 36px;
+	text-align: center;
+}
+.header__button {
+	margin: 46px 0px 0px 0px;
+}
+.header__button--btn {
+	width: 370px;
+	margin: 0 auto;
+}
+
+.btn {
+	text-align: center;
+	display: block;
+	line-height: 56px;
+	height: 56px;
+	background-color: #007397;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.invest {
+	margin: 0px 0px 100px 0px;
+	text-align: left;
+}
+.invest__title {
+	color: #3c3f3d;
+	font-family: "PT Serif", serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding: 0px 0px 40px 0px;
+}
+.invest__text {
+	color: #646667;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 36px;
+	text-align: left;
+	max-width: 670px;
+	padding: 0px 0px 48px 0px;
+}
+.invest__row {
+	display: flex;
+	justify-content: space-between;
+	& div:nth-child(3) {
+		padding: 0 70px;
+	}
+	@media (max-width: 1024px) {
+		flex-wrap: wrap;
+		& div:nth-child(1) {
+			flex: 0 0 50%;
+		}
+		& div:nth-child(2) {
+			flex: 0 0 50%;
+		}
+		& div:nth-child(3) {
+			padding: 0;
+			flex: 0 0 100%;
+		}
+		& div:nth-child(4) {
+			flex: 0 0 50%;
+		}
+		& div:nth-child(5) {
+			flex: 0 0 50%;
+		}
+	}
+}
+.invest-item {
+	@media (max-width: 1024px) {
+		padding: 35px 0;
+	}
+}
+.invest-item__title {
+	color: #007397;
+	font-family: "PT Serif", serif;
+	font-size: 54px;
+	line-height: 54px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.invest-item__subtitle {
+	color: #aec3d4;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+}
+.invest__button {
+	width: 270px;
+	margin: 48px 0px 0px 0px;
+	@media (max-width: 1024px) {
+		margin: 48px auto 0;
+	}
+}
+
+.news {
+	margin: 0px 0px 35px 0px;
+}
+.news__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 0px 48px 0px;
+	@media (max-width: 1024px) {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+}
+.news__title {
+	color: #3c3f3d;
+	font-family: "PT Serif", serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+.news-filter {
+	display: flex;
+	& li:first-child {
+		margin: 0;
+	}
+	@media (max-width: 1024px) {
+		flex: 0 0 100%;
+	}
+}
+.filter__item {
+	margin: 0px 0px 0px 95px;
+	max-width: 100px;
+	text-align: center;
+	display: inline;
+	color: #d3cfce;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover,
+	&.active {
+		color: #007397;
+	}
+	@media (max-width: 1024px) {
+		padding: 25px 0px 0px 0px;
+	}
+}
+.news__items {
+	display: flex;
+	flex: 0 1 33.333%;
+	margin: 0 15px;
+	& div:first-child {
+		margin: 0px 15px 0px 0px;
+	}
+	& div:last-child {
+		margin: 0px 0px 0px 15px;
+	}
+	@media (max-width: 1200px) {
+		flex: 0 1 1 !important;
+		flex-wrap: wrap;
+		justify-content: center !important;
+		& div:first-child {
+			margin: 0px 0px 0px 0px;
+		}
+		& div:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+.news__item {
+	max-width: 370px;
+	margin: 0 0 35px 0;
+	@media (max-width: 1200px) {
+		margin: 0 15px 35px 15px;
+	}
+}
+.news__mainblock {
+	width: 370px;
+	height: 370px;
+	background-repeat: no-repeat;
+}
+._mb1 {
+	background-image: url("../img/overlay2.png"), url("../img/cont_img1.png");
+}
+._mb2 {
+	background-image: url("../img/overlay2.png"), url("../img/cont_img2.png");
+}
+._mb3 {
+	background-image: url("../img/overlay2.png"), url("../img/cont_img3.png");
+}
+.mainblock__title {
+	padding: 24px 0px 0px 30px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.75px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+.mainblock__text {
+	padding: 190px 30px 0px 30px;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+.news__text {
+	color: #646667;
+	font-size: 16px;
+	line-height: 32px;
+	padding: 30px 0px 18px 0px;
+}
+.news__button {
+	background: none;
+	color: #007397;
+	text-align: left;
+}
+q .location {
+}
+.location__title {
+	color: #3c3f3d;
+	font-family: "PT Serif", serif;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 48px;
+	text-transform: uppercase;
+	margin: 0px 0px 48px 0px;
+}
+
+#map {
+	width: 100%;
+	height: 448px;
+	// background-color: #6b9bb7;
+}
+.footer {
+	padding: 42px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #646667;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 40px;
+	text-transform: uppercase;
+	a {
+		color: #646667;
+		&:hover {
+			color: #007397;
+		}
+	}
+}
+.footer__left {
+}
+.footer__right {
+	display: flex;
+}
+.footer__terms {
+}
+.footer__private {
+	margin: 0px 0px 0px 35px;
+}
+
+.contacts-map-item_1 {
+	font-size: 20px;
+	display: none;
+}
